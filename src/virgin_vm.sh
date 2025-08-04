@@ -31,7 +31,7 @@ source .bashrc
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
 echo -e "import torch\nprint(torch.cuda.is_available())\nprint(torch.cuda.get_device_name(0))" > test_cuda.py
 python test_cuda.py
-
+sudo apt install git
 
 ## run these lines in the vm to make sure port 8188 is open for external access
 #sudo ufw allow 8188/tcp
